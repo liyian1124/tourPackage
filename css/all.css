@@ -227,6 +227,27 @@ body {
   }
 }
 
+/* .search-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+} */
+.search-area-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between; */
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
 .search-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,17 +255,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 50px 0;
+  flex-shrink: 0;
+  width: 70%;
 }
 
 .search-area p {
   color: #818A91;
 }
+.chart {
+  margin-left: auto;
+  width: 162px;
+}
 
 @media (max-width: 768px) {
-  .search-area {
+  .search-area-chart, .search-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -252,11 +276,19 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .chart {
+    width: 300px;
+    margin: 0;
   }
 }
 
 .regionSearch {
-  width: 27.5%;
+  width: 306px;
   min-height: 38px;
   text-indent: 0.5rem;
   color: #818A91;
